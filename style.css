@@ -1,1 +1,21 @@
-git
+html{
+	font-size:62.5%; 
+}
+
+body { 
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+	margin:0 auto;
+	max-width: 1200px;
+}
+
+header{
+	width: 100%;
+	display : flex;
+	justify-content: space-between;
+   align-items: center;
+	 border-bottom: 0.51px solid rgba(211, 211, 211, 0.188);
+}
+
