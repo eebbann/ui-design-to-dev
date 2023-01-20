@@ -19,3 +19,194 @@ header{
 	 border-bottom: 0.51px solid rgba(211, 211, 211, 0.188);
 }
 
+.wrapper nav{
+	margin: 4em;
+}
+header img{
+	display: block;
+	width:196px
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	gap:3.1em
+}  
+
+nav ul li a, nav ul li{
+	list-style: none;
+	text-decoration: none;
+	color: rgb(17, 16, 16);
+	 text-transform: capitalize;
+	font-size: 1.4rem;
+	position: relative;
+}
+
+nav ul li a:before{
+position:absolute;
+content: "";
+width:35%;
+height: 1px;
+border-bottom: 2px solid black;
+bottom:-2px;
+}
+nav ul li:before{
+	position:absolute;
+	content: "";
+	width:0%;
+	height: 1px;
+	border-bottom: 2px solid rgba(66, 64, 64, 0.547);
+	bottom:-2px;
+	transition:width 0.5s
+	}
+	nav ul li:hover:before{
+		position:absolute;
+		content: "";
+		width:30%;
+		height: 1px;
+		border-bottom: 2px solid rgba(66, 64, 64, 0.547);
+		bottom:-2px; 
+		}
+/* hero section */
+
+main{
+	display:flex;
+	 gap:8em;
+	 margin-top: 11em;
+}
+
+.left-col{
+	width:45%;
+
+}
+.right-col{
+	flex-grow: 1;
+}
+h1{
+	font-size: 5.2rem;
+  font-family: 'Playfair Display', serif;;
+}
+
+.left-col p {
+	font-size: 1.8rem;
+	/* line-height: 2;
+ */
+}
+.cta_btn{
+	display:flex;
+  gap:3em;
+	align-items: center;
+	margin: 3.5em 0;
+}
+
+.primary-cta{
+	background-color:#f1e2d1;
+	font-size: 1.8em;
+	border-radius:10px;
+	padding:10px 15px;
+	text-decoration: none;
+	color:black; 
+}
+.primary-cta:hover{
+	background-color:#efd1af;
+	 ; 
+}
+.secondary_cta{
+	display: flex;
+	align-items: center;
+	gap: 0.52em;
+	text-decoration: none;
+	color:rgb(39, 9, 15);
+	font-weight: 600; 
+}
+.secondary_cta { 
+	text-decoration: solid crimson;
+}
+.secondary_cta svg{ 
+	transform: translate(10px);
+}
+.secondary_cta:hover svg{
+	 transform: translate(10px);
+}
+
+.success{
+	border:2px solid black;
+	padding:3em;
+	border-radius: 1em;
+}
+.success p{
+	display: flex; 
+	gap: 3em; 
+}
+.number{
+	font-size: 1.9rem}
+
+	/* right col */
+
+	.right-col{
+		display: grid;
+		gap:2.3em;
+		grid-template-columns: repeat(2, auto);
+		grid-template-areas: 
+		"l ."
+		"l ."
+		;
+	}
+
+	.card{
+		background-color: gray;
+		border-radius :10px;
+		padding:1.8em;
+		display: flex;
+		align-items: end;
+		background-size: 150%;
+		background-repeat: no-repeat;
+			background-size: cover;
+	}
+
+	.card-1{
+		grid-area:l; 
+     position : relative;
+		 background-image: url('https://www.pngitem.com/pimgs/m/330-3303997_shirt-png-transparent-image-folded-clothes-png-png.png');
+	    
+		}
+		.card-2{   
+			 background-image: url('https://footwearnews.com/wp-content/uploads/2021/10/adidas-yeezy-boost-350-v2-black-red-february-11th-5.jpeg?w=700&h=437&crop=1');
+				
+			}
+			.card-3{   
+				background-image: url('https://media.endclothing.com/media/f_auto,w_600,h_600/prodmedia/media/catalog/product/1/2/12-10-2021_BLRx_HWNB009F21FAB0011010_6_1.jpg');
+				 
+			 }
+		
+	.card-1:before{
+     content:"";
+		 background: url('https://static.vecteezy.com/system/resources/previews/014/455/894/original/hand-drawn-arrow-doodle-icon-on-transparent-background-free-png.png');
+		 position:absolute;
+		 left:-32px;
+		 background-repeat:no-repeat;;
+     width:100%;
+		 height: 100%;
+		 top:20px;
+		 pointer-events: none;
+	}
+	.card-details{
+		background:white;
+		width: 100%;
+		padding:10px 15px;
+		border-radius: 10px;
+		box-shadow: 1px 1px 4px 2px rgba(23, 23, 23, 0.3)
+	}
+	.card-details a{
+		font-weight: 500;
+		font-size: 1.9em;
+		text-decoration: none;
+		margin:0;
+		color: black;
+	}
+	.card-details p{
+		margin: 0;
+		color: rgb(90, 88, 88);
+		font-size: 1.2em;
+
+	}
